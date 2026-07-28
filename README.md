@@ -3,7 +3,7 @@
 **Сборка Android-приложений прямо на телефоне.** Без компьютера, без облака.
 Termux → Linux-образ → готовый APK под `arm64-v8a`.
 
-![версия](https://img.shields.io/badge/версия-3.0.0-blue)
+![версия](https://img.shields.io/badge/версия-0.0.1-blue)
 ![лицензия](https://img.shields.io/badge/лицензия-MIT-green)
 ![архитектура](https://img.shields.io/badge/ARM-aarch64-orange)
 
