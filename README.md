@@ -89,20 +89,20 @@ termux-setup-storage
 
 Возьмите последний файл со страницы
 [**Releases**](https://github.com/wfllive-official/rai/releases/latest)
-или командой:
+или командой и * - это версиях:
 
 ```bash
-curl -LO https://github.com/wfllive-official/rai/releases/download/v3.0.0/rai-3.0.0.sh
-bash rai-3.0.0.sh
+curl -LO https://github.com/wfllive-official/rai/releases/download/*/rai-*.sh
+bash rai-*.sh
 ```
 
 **Первый запуск сам себя устанавливает** — отдельная команда не нужна:
 
 ```
-==> Первый запуск RAI v3.0.0 — выполняю установку
+==> Первый запуск RAI v0.0.1 — выполняю установку
  OK  команда: /data/data/com.termux/files/usr/bin/rai
 
-── RAI v3.0.0 ──────────────────────────────
+── RAI v0.0.1 ──────────────────────────────
   среда      : Termux (Android)
   архитектура: aarch64
 ```
@@ -150,8 +150,8 @@ echo "alias ub='~/ubuntu/start.sh'" >> ~/.bashrc
 
 ```bash
 apt-get update && apt-get install -y curl nodejs
-curl -LO https://github.com/wfllive-official/rai/releases/download/v3.0.0/rai-3.0.0.sh
-bash rai-3.0.0.sh
+curl -LO https://github.com/wfllive-official/rai/releases/download/v*/rai-*.sh
+bash rai-*.sh
 ```
 
 Файл можно не качать заново, а положить в общую папку — она видна
@@ -174,7 +174,7 @@ rai status
 ```
 
 ```
-── RAI v3.0.0 ──────────────────────────────
+── RAI v0.0.1 ──────────────────────────────
   среда      : Ubuntu 24.04.4 LTS (гостевой образ на Android)
   архитектура: aarch64
 ── Компоненты ──────────────────────────────
@@ -276,12 +276,12 @@ rai new MyApp --modern        # MODERN  — AGP 9.3.1,  Gradle 9.6.1,  compileSd
 
 | Команда | Что делает |
 |---|---|
-| `bash rai-3.0.0.sh` | запуск; при первом разе — установка |
-| `bash rai-3.0.0.sh --update` | обновить до версии этого файла |
-| `bash rai-3.0.0.sh --reinstall` | переустановить принудительно |
-| `bash rai-3.0.0.sh --uninstall` | удалить с подтверждением |
-| `bash rai-3.0.0.sh --verify` | проверить подлинность |
-| `bash rai-3.0.0.sh --info` | версия, отпечаток, каталог |
+| `bash rai-0.0.1.sh` | запуск; при первом разе — установка |
+| `bash rai-0.0.2.sh --update` | обновить до версии этого файла |
+| `bash rai-3.0..sh --reinstall` | переустановить принудительно |
+| `bash rai-0.0.1.sh --uninstall` | удалить с подтверждением |
+| `bash rai-0.0.1.sh --verify` | проверить подлинность |
+| `bash rai-0.0.1.sh --info` | версия, отпечаток, каталог |
 
 ---
 
@@ -324,16 +324,16 @@ export RAI_NO_UPDATE_CHECK=1
 ## Удаление
 
 ```bash
-bash rai-3.0.0.sh --uninstall
+bash rai-0.0.1.sh --uninstall
 ```
 
 Показывает список и спрашивает подтверждение:
 
 ```
-Удаление RAI v3.0.0
+Удаление RAI v0.0.1
 
   Будет удалено:
-    • код RAI        /root/.rai/3.0.0
+    • код RAI        /root/.rai/0.0.1
     • рабочие файлы  /root/.rai/work
     • команда        /usr/local/bin/rai
 
@@ -472,7 +472,7 @@ rai verify
 ```
 
 ```
-RAI v3.0.0 (release)
+RAI v0.0.1 (release)
   собрано   : 2026-07-28T12:54:00Z
   отпечаток : 3d704cf965a052d1
   SHA-256   : 47af381d74419cd3ad04dfa661672ec4...
@@ -500,7 +500,7 @@ RAI v3.0.0 (release)
 и сверяйте контрольную сумму:
 
 ```bash
-sha256sum rai-3.0.0.sh
+sha256sum rai-0.0.1.sh
 ```
 
 ---
