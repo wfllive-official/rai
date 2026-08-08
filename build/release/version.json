@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "published": "2026-08-01",
+  "file": "rai.sh",
+  "sha256": "f67b3a0ad1c866c2bc94758057143dc51be0502bf561c7a5ee4ea105916ed9d3",
+  "minNode": 18,
+  "notes": [
+    "первый запуск"
+  ],
+  "critical": false
+}
